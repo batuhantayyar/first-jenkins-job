@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+  "test": "npx playwright test",
+  "test:specFile": "npx playwright test --grep @file-name.spec.js",
+  "test:tag": "npx playwright test --grep @tagName",
+  "report": "npx playwright show-report"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
